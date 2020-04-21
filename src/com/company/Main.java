@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        MyArray myArray2 = new MyArray();
+        MyArray myArray = new MyArray();
         Scanner scanner = new Scanner(System.in);
         int maxNumber = scanner.nextInt();
-        ArrayList<Integer> integers = myArray(myArray2::foundPrimeNumbers,maxNumber);
+        ArrayList<Integer> integers = myArray(myArray::foundPrimeNumbers,maxNumber);
         System.out.println(integers);
     }
     public static ArrayList<Integer> myArray(Test<Integer> test, Integer number){
